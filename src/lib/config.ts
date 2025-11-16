@@ -1,42 +1,42 @@
 import { AppConfigPublic } from "./types";
 
 export const appConfig: AppConfigPublic = {
-  projectName: "Indie Kit",
-  projectSlug: "indie-kit",
+  projectName: "FixReviews",
+  projectSlug: "fixreviews",
   keywords: [
-    "Indie Kit",
-    "NextJS Boilerplate",
-    "NextJS SaaS",
-    "NextJS Starter Kit",
-    "SaaS Boilerplate",
-    "SaaS Starter Kit",
-    "Indie Kit Pro",
+    "FixReviews",
+    "Google Reviews",
+    "Review Management",
+    "AI Review Response",
+    "Business Reputation",
+    "Customer Reviews",
+    "Review Automation",
   ],
   description:
-    "Indie Kit is a NextJS starter kit for building your own SaaS in hours.",
+    "Transformez vos avis négatifs en clients fidèles — automatiquement.",
   auth: {
-    enablePasswordAuth: false, // Set to true to enable password-based authentication
+    enablePasswordAuth: false, // Google OAuth only
   },
   legal: {
     address: {
-      street: "Plot No 337, Workyard, Phase 2, Industrial Business &amp; Park",
-      city: "Chandigarh",
-      state: "Punjab",
-      postalCode: "160002",
-      country: "India",
+      street: "123 Rue de la Paix",
+      city: "Paris",
+      state: "Île-de-France",
+      postalCode: "75001",
+      country: "France",
     },
-    email: "ssent.hq@gmail.com",
-    phone: "+91 9876543210",
+    email: "contact@fixreviews.fr",
+    phone: "+33 1 23 45 67 89",
   },
   social: {
-    twitter: "https://twitter.com/cjsingg",
-    instagram: "https://instagram.com/-",
-    linkedin: "https://linkedin.com/-",
-    facebook: "https://facebook.com/-",
-    youtube: "https://youtube.com/-",
+    twitter: "https://twitter.com/fixreviews",
+    instagram: "https://instagram.com/fixreviews",
+    linkedin: "https://linkedin.com/company/fixreviews",
+    facebook: "https://facebook.com/fixreviews",
+    youtube: "https://youtube.com/@fixreviews",
   },
   email: {
-    senderName: "Indie Kit",
-    senderEmail: "ssent.hq@gmail.com",
+    senderName: "FixReviews",
+    senderEmail: "contact@fixreviews.fr",
   },
 };

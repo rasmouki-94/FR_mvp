@@ -1,24 +1,42 @@
-import { WebsiteFAQs } from "@/components/website/faqs";
-import { CTA2 } from "@/components/website/cta-2";
-import { WithWithout } from "@/components/website/with-without";
-import Hero2 from "@/components/sections/hero-2";
-import CTA1 from "@/components/website/cta-1";
-import MonthlyAnnualPricing from "@/components/website/monthly-annual-pricing";
-import TextRevealByWord from "@/components/ui/text-reveal";
-import WebsiteCreditsSection from "@/components/website/website-credits-section";
+import { getCopy } from "@/content";
+import { Hero } from "@/components/marketing/hero";
+import { Features } from "@/components/marketing/features";
+import { HowItWorks } from "@/components/marketing/how-it-works";
+import { Metrics } from "@/components/marketing/metrics";
+import { PricingTable } from "@/components/marketing/pricing-table";
+import { Testimonials } from "@/components/marketing/testimonials";
+import { FAQ } from "@/components/marketing/faq";
+import { CTASection } from "@/components/marketing/cta-section";
 
 export default function WebsiteHomepage() {
+  const copy = getCopy("fr");
+
   return (
     <>
-      <Hero2 />
-      <CTA1 />
-      <MonthlyAnnualPricing />
-      <TextRevealByWord text="Still not sure? My users are able to create their own blogs and websites with ease. It was very difficult to find a solution that was easy to use and affordable." />
-      <WithWithout />
-      <WebsiteCreditsSection />
-      <MonthlyAnnualPricing />
-      <WebsiteFAQs />
-      <CTA2 />
+      <Hero copy={copy.hero} />
+
+      <div id="features">
+        <Features copy={copy.features} />
+      </div>
+
+      <HowItWorks copy={copy.howItWorks} />
+
+      <Metrics copy={copy.metrics} />
+
+      <Testimonials copy={copy.testimonials} />
+
+      <PricingTable copy={copy.pricing} />
+
+      <FAQ copy={copy.faq} />
+
+      <CTASection
+        title="Prêt à transformer vos avis négatifs ?"
+        description="Rejoignez les centaines de commerces qui automatisent leurs réponses aux avis."
+        primaryCta="Rejoindre la waitlist"
+        primaryHref="/join-waitlist"
+        secondaryCta="Voir une démo"
+        secondaryHref="/contact"
+      />
     </>
   );
 }
